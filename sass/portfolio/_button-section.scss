@@ -1,0 +1,38 @@
+/* Buttons section  */
+
+.button-list-item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.button-list-item > button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  border: none;
+}
+.button-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-list button {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--buttonbackground);
+  color: var(--title-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-list button:hover,
+.button-list button:focus {
+  color: var(--primewhite);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
