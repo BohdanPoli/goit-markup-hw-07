@@ -72,11 +72,10 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.join-link:hover,
-.join-link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .join-icon {
@@ -86,13 +85,6 @@
 .mailing {
   margin-left: auto;
   padding-top: 12px;
-}
-
-.email-footer-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .email-footer-input {
@@ -105,6 +97,12 @@
   border-radius: 4px;
   color: var(--primewhite);
   outline: none;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .email-flex {

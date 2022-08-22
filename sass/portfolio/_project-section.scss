@@ -1,11 +1,5 @@
 /* Projects section  */
 
-.project-item:hover,
-.project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .projects-section {
   padding: 94px 0;
 }
@@ -34,6 +28,11 @@
 .project-item {
   width: 370px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .project-div {
@@ -46,11 +45,6 @@
   overflow: hidden;
 }
 
-.project-link:hover .project-overlay {
-  transform: translateY(-100%);
-  opacity: 1;
-}
-
 .project-overlay {
   position: absolute;
   top: 100%;
@@ -60,6 +54,11 @@
   opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .project-link:hover & {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
 }
 
 .overlay-text {

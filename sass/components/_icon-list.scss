@@ -6,7 +6,12 @@
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
+
 .icon-list {
   display: flex;
   justify-content: center;
@@ -21,9 +26,4 @@
 .icon-link:hover .list-icon,
 .icon-link:focus .list-icon {
   fill: var(--primewhite);
-}
-
-.icon-link:hover,
-.icon-link:focus {
-  background-color: var(--accent-color);
 }
