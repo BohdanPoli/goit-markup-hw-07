@@ -12,16 +12,12 @@
 }
 .button-list {
   margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  @include centerflex();
 }
 
 .button-list button {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
+  @include fontstyle(16px, 500, 1.62, null, center);
+
   background-color: var(--buttonbackground);
   color: var(--title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),

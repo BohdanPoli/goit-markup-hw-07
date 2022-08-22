@@ -1,8 +1,7 @@
 /* header */
 
 .header > .container {
-  display: flex;
-  align-items: center;
+  @include centerflex();
 }
 .nav-list {
   display: flex;
@@ -30,8 +29,7 @@
 }
 
 .header-link {
-  display: flex;
-  align-items: center;
+  @include centerflex();
 }
 .header-icon {
   margin-right: 10px;
@@ -40,10 +38,8 @@
 
 /* header navigation */
 .nav-list-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fontstyle(14px, 500, 1.14, 0.02em);
+
   &:not(:last-child) {
     margin-right: 50px;
   }
@@ -63,10 +59,8 @@
 
 /* header links */
 .connects-list a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fontstyle(14px, 500, 1.14, 0.02em);
+
   color: var(--text-color);
   padding: 32px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

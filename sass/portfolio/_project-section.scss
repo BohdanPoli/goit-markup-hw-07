@@ -4,18 +4,13 @@
   padding: 94px 0;
 }
 .project-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include fontstyle(18px, null, 2, 0.06em);
   color: var(--title-color);
   margin-bottom: 4px;
 }
 
 .project-type {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
+  @include fontstyle(16px, null, 1.88, null);
   color: var(--text-color);
 }
 
@@ -62,11 +57,8 @@
 }
 
 .overlay-text {
+  @include fontstyle(18px, null, 1.5, 0.03);
   padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.5;
-
-  letter-spacing: 0.03em;
 
   color: var(--primewhite);
 }
