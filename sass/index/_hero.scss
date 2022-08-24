@@ -1,10 +1,6 @@
 /* Hero section */
 
-.flex-container {
-  @include centerflex($dir: column, $jus: null);
-}
-
-.hero-section {
+.hero {
   background-color: var(--mainbackground);
   padding: 200px 0;
   background-image: linear-gradient(
@@ -19,8 +15,11 @@
   max-width: 1600px;
   margin: 0 auto;
 }
+.hero__container {
+  @include centerflex($dir: column, $jus: null);
+}
 
-.hero-title {
+.hero__title {
   @include fontstyle(44px, 900, 1.36, 0.06em, center);
   text-transform: uppercase;
   color: var(--primewhite);

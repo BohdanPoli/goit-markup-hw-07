@@ -1,17 +1,7 @@
 /* Projects section  */
 
-.projects-section {
+.projects {
   padding: 94px 0;
-}
-.project-title {
-  @include fontstyle(18px, null, 2, 0.06em);
-  color: var(--title-color);
-  margin-bottom: 4px;
-}
-
-.project-type {
-  @include fontstyle(16px, null, 1.88, null);
-  color: var(--text-color);
 }
 
 .projects-list {
@@ -20,7 +10,7 @@
   gap: 30px;
 }
 
-.project-item {
+.projects-list__item {
   width: 370px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -30,17 +20,11 @@
   }
 }
 
-.project-div {
-  border: 1px solid #eeeeee;
-  padding: 24px 20px;
-}
-
-.project-thumb {
+.projects-list__thumb {
   position: relative;
   overflow: hidden;
 }
-
-.project-overlay {
+.overlay {
   position: absolute;
   top: 100%;
   width: 100%;
@@ -50,15 +34,31 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .project-link:hover & {
+  .project-list__link:hover & {
     transform: translateY(-100%);
     opacity: 1;
   }
 }
 
-.overlay-text {
+.overlay__text {
   @include fontstyle(18px, null, 1.5, 0.03);
   padding: 63px 24px;
 
   color: var(--primewhite);
+}
+
+.thumb__meta {
+  border: 1px solid #eeeeee;
+  padding: 24px 20px;
+}
+
+.meta__title {
+  @include fontstyle(18px, null, 2, 0.06em);
+  color: var(--title-color);
+  margin-bottom: 4px;
+}
+
+.meta__type {
+  @include fontstyle(16px, null, 1.88, null);
+  color: var(--text-color);
 }

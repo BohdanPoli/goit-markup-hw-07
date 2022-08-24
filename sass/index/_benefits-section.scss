@@ -1,6 +1,16 @@
 /* Benefits section  */
 
-.benefits-icon-wrap {
+.benefits {
+  padding: 94px 0;
+}
+.benefits__list {
+  @include centerflex($ali: null);
+}
+.benefits__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.icon-wrap {
   width: 270px;
   height: 120px;
   background: #f5f4fa;
@@ -10,25 +20,14 @@
   margin-bottom: 30px;
 }
 
-.benefits-section {
-  padding: 94px 0;
-}
-.benefits-list {
-  @include centerflex($ali: null);
-}
-
-.benefits-item:not(:first-child) {
-  margin-left: 30px;
-}
-
-.benefits-title {
+.benefits__title {
   @include fontstyle(14px, null, 1.14, null);
 
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.benefits-text {
+.benefits__text {
   @include fontstyle(14px, null, 1.71, null);
   color: var(--text-color);
 }

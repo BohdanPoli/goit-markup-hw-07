@@ -1,6 +1,4 @@
-.hero-button,
-.email-btn,
-.send-btn {
+.button {
   @include fontstyle(16px, 700, 1.88, 0.06em);
   color: var(--primewhite);
   background-color: var(--accent-color);

@@ -1,17 +1,22 @@
 /* Clients-section  */
 
-.clients-section {
+.clients {
   padding: 94px 0;
 }
 
-.clients-title {
+.clients__title {
   @include fontstyle(36px, null, 0.85, 0.03em, center);
   color: var(--title-color);
 
   margin-bottom: 50px;
 }
 
-.clients-link {
+.clients__list {
+  @include centerflex();
+  gap: 30px;
+}
+
+.clients__link {
   width: 170px;
   height: 92px;
   @include centerflex();
@@ -24,16 +29,12 @@
     border-color: var(--accent-color);
   }
 }
-.clients-list {
-  @include centerflex();
-  gap: 30px;
-}
 
-.clients-icon {
+.clients__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .clients-link:hover &,
-  .clients-link:focus & {
+  .clients__link:hover &,
+  .clients__link:focus & {
     fill: var(--accent-color);
   }
 }
